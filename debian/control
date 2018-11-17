@@ -1,0 +1,41 @@
+Source: flatbuffers
+Section: devel
+Priority: optional
+Maintainer: Enrico Weigelt, metux IT consult <info@metux.net>
+Build-Depends: cmake, debhelper (>=7)
+Standards-Version: 4.1.3
+
+Package: flatbuffers
+Architecture: any
+Multi-Arch: foreign
+Depends: libflatbuffers (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: flatbuffers tools
+ FlatBuffers is an efficient cross platform serialization library
+ for C++, C#, C, Go, Java, JavaScript, Lobster, Lua, TypeScript,
+ PHP, Python, and Rust. It was originally created at Google for
+ game development and other performance-critical applications.
+
+Package: libflatbuffers
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: flatbuffers runtime libraries
+ FlatBuffers is an efficient cross platform serialization library
+ for C++, C#, C, Go, Java, JavaScript, Lobster, Lua, TypeScript,
+ PHP, Python, and Rust. It was originally created at Google for
+ game development and other performance-critical applications.
+
+Package: libflatbuffers-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libsharedlib1 (= ${binary:Version}), ${misc:Depends}
+Description: flatbuffers development libraries
+ FlatBuffers is an efficient cross platform serialization library
+ for C++, C#, C, Go, Java, JavaScript, Lobster, Lua, TypeScript,
+ PHP, Python, and Rust. It was originally created at Google for
+ game development and other performance-critical applications.
