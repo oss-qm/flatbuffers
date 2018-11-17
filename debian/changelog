@@ -1,0 +1,5 @@
+flatbuffers (1.9.0~ascii3) ascii; urgency=low
+
+  * Packaging for ascii
+
+ -- Enrico Weigelt, metux IT consult <info@metux.net>  Wed, 21 Nov 2018 12:49:00 +0100
